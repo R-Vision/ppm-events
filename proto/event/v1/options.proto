@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package event.v1;
+
+import "google/protobuf/descriptor.proto";
+
+// Event metadata applied at the message level
+extend google.protobuf.MessageOptions {
+  // metadata
+  optional EventMetadata metadata = 1147;
+}
+
+// EventMetadata
+message EventMetadata {
+  // group means the event belongs to some events group
+  required string group = 1;
+
+  // partition_key_field specifies from which field
+  // to take the value for the partition key
+  optional string partition_key_field = 2;
+}

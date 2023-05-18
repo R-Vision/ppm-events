@@ -1,0 +1,6 @@
+{
+  "$schema": "http://repos.rvision.pro/platform/ppm/schema.json",
+  "name": "platform.event",
+  "version": "1.0.0",
+  "description": "Event metadata"
+}
