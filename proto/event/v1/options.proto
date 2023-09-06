@@ -4,6 +4,8 @@ package event.v1;
 
 import "google/protobuf/descriptor.proto";
 
+option go_package = "event.v1";
+
 // Event metadata applied at the message level
 extend google.protobuf.MessageOptions {
   // metadata
